@@ -1,7 +1,41 @@
+@import 'variables';
 @import 'utils';
+@import 'mixins';
 @import 'fonts';
 @import 'typography';
+@import './styles/blocks/header';
+@import './styles/blocks/nav';
+@import './styles/blocks/button';
+@import './styles/blocks/intro';
+@import './styles/blocks/strategic';
+@import './styles/blocks/about';
+@import './styles/blocks/services';
+@import './styles/blocks/testimonials';
+@import './styles/blocks/vision';
+@import './styles/blocks/footer';
+@import './styles/blocks/expertise';
+@import './styles/blocks/other';
+
+
 
 body {
-  background: $c-gray;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }

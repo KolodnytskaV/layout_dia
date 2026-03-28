@@ -1,0 +1,42 @@
+.container {
+  max-width: 1148px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display:block;
+  width: 46px;
+}
+
+
+
+.little_name{
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c0cdd7;
+}
+
+.title_section {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  vertical-align: middle;
+  color: #253757;
+}
+
+.flash_card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #334563;
+
+  & img {
+    width: 40px;
+    height: 40px;
+  }
+}
