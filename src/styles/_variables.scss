@@ -1,0 +1,26 @@
+:root {
+  --bg-color: #2c2c2c;
+  --bg-button: #008aff;
+  --button-color: #2060f6;
+}
+
+.dark-theme {
+  --bg-color: #008aff;
+  --bg-button: #2c2c2c;
+  --button-color: #ff9c8e;
+}
+
+$tablet-min-width: 640px;
+$desktop-min-width: 1024px;
+$design: 1600px;
+$large-width: 2560px;
+
+$page-color: #f3f6f9;
+$white: #fff;
+$c-gray: #eee;
+$btn_color: #2060f6;
+$text-color: #6c788b;
+$title-color: #253757;
+$header_bg: #2c2c2c;
+$services_btn: #334563;
+$services_name: #c0cdd7;

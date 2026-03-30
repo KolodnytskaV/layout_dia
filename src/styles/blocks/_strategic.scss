@@ -1,0 +1,71 @@
+@import '../variables';
+
+.strategic {
+  margin-top: 120px;
+  position: relative;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+  }
+
+  &__content {
+    max-width: 490px;
+  }
+
+  &__title {
+    margin-top: 120px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-bottom: 83px;
+    max-width: 362px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translateX(20%);
+
+    @include on-desktop {
+      transform: translateX(0);
+    }
+
+    @include on-design {
+      transform: translateX(20%);
+    }
+
+    @include on-large {
+      transform: translateX(35%);
+    }
+
+    img {
+      width: 700px;
+
+      @include on-desktop {
+        width: 502px;
+      }
+
+      @include on-large {
+        width: 1167px;
+      }
+    }
+  }
+}
+

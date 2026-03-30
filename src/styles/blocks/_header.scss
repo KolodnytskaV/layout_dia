@@ -1,0 +1,23 @@
+.header {
+  background-color: #2C2C2C;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+  padding-bottom: 48px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    width: 46px;
+    height: 28px;
+    margin-top: 48px;
+    margin-right: 251px;
+  }
+}

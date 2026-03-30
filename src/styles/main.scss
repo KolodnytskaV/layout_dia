@@ -1,7 +1,43 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@use 'variables';
+@use './utils/extends';
+@use './utils/mixins' as *;
+@use './utils/vars';
+@use 'fonts';
+@use 'typography';
+
+@use './blocks/about';
+@use './blocks/button';
+@use './blocks/expertise';
+@use './blocks/footer';
+@use './blocks/header';
+@use './blocks/intro';
+@use './blocks/nav';
+@use './blocks/other';
+@use './blocks/services';
+@use './blocks/strategic';
+@use './blocks/testimonials';
+@use './blocks/vision';
+
+
 
 body {
-  background: $c-gray;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
