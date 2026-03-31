@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .services {
   padding: 100px 0;
 
@@ -38,8 +40,20 @@
   padding: 32px;
   border-radius: 16px;
   box-shadow: 0px 9px 18px 0px #25293108;
-  width: 264px;
+
   height: 264px;
+
+  @include on-desktop {
+    width: 214px;
+  }
+
+  @include on-desktop {
+    width: 264px;
+  }
+
+  @include on-desktop {
+    width: 264px;
+  }
 
   &__info {
     display: flex;
