@@ -9,13 +9,29 @@
     align-items: center;
     justify-content: space-between;
     margin-right: 0;
+    margin-bottom: 0;
+    gap: 196px;
+
+    padding: 0;
+
+    @include on-desktop {
+      margin-left: 54px;
+    }
+
+    @include on-design {
+      margin-left: 224px;
+    }
+
+    @include on-large {
+      margin-left: 707px;
+    }
 
     position: relative;
   }
 
   &__content {
-    max-width: 490px;
-    padding-right: 196px;
+    width: 490px;
+    margin-left: 0;
   }
 
   &__title {
@@ -39,23 +55,24 @@
   }
 
   &__image {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
 
     &__scroll {
       height: 680px;
+      width: 100%;
 
       @include on-desktop {
         width: 502px;
       }
 
-      @include on-large {
-        width: 1167px;
-      }
-
       @include on-design {
         width: 687px;
+      }
+
+      @include on-large {
+        width: 1167px;
       }
     }
   }

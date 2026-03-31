@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .header {
   background-color: #2C2C2C;
   background-size: cover;
@@ -12,12 +14,24 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 0 auto;
   }
 
   &__logo {
     width: 46px;
     height: 28px;
     margin-top: 48px;
-    margin-right: 251px;
+
+    /*@include on-desktop {
+      margin-left: 54px;
+    }
+
+    @include on-design {
+      margin-left: 224px;
+    }
+
+    @include on-large {
+      margin-left: 707px;
+    }*/
   }
 }

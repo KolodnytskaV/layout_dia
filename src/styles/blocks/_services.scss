@@ -20,7 +20,7 @@
   &__cards {
     width: 50%;
     display: grid;
-    grid-template-columns: repeat(2, 264px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 }
@@ -47,11 +47,11 @@
     width: 214px;
   }
 
-  @include on-desktop {
+  @include on-design {
     width: 264px;
   }
 
-  @include on-desktop {
+  @include on-large {
     width: 264px;
   }
 

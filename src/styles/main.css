@@ -92,6 +92,9 @@ h1 {
   width: 264px;
   text-align: center;
 }
+.expertise-card img {
+  margin: 0 auto;
+}
 
 .footer {
   margin-top: -102px;
@@ -168,6 +171,7 @@ h1 {
 .footer__bottom .nav__list {
   display: flex;
   gap: 64px;
+  align-items: center;
 }
 .footer__bottom a {
   color: #ffffff;
@@ -202,12 +206,23 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 0 auto;
 }
 .header__logo {
   width: 46px;
   height: 28px;
   margin-top: 48px;
-  margin-right: 251px;
+  /*@include on-desktop {
+    margin-left: 54px;
+  }
+
+  @include on-design {
+    margin-left: 224px;
+  }
+
+  @include on-large {
+    margin-left: 707px;
+  }*/
 }
 
 .intro {
@@ -263,6 +278,11 @@ h1 {
 .nav__item:last-child {
   margin-left: 229px;
 }
+@media (min-width: 1024px) {
+  .nav__item:last-child {
+    margin-left: 114px;
+  }
+}
 .nav__item:last-child .nav__link::after {
   content: "";
   position: absolute;
@@ -286,12 +306,9 @@ h1 {
 .container {
   max-width: 1148px;
   margin: 0 auto;
-  padding: 0;
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 918px;
-  }
+  padding-left: 54px;
+  padding-right: 54px;
+  align-items: center;
 }
 
 .logo {
@@ -346,7 +363,7 @@ h1 {
 .services__cards {
   width: 50%;
   display: grid;
-  grid-template-columns: repeat(2, 264px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
@@ -372,12 +389,12 @@ h1 {
     width: 214px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1600px) {
   .service-card {
     width: 264px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 2560px) {
   .service-card {
     width: 264px;
   }
@@ -428,11 +445,31 @@ h1 {
   align-items: center;
   justify-content: space-between;
   margin-right: 0;
+  margin-bottom: 0;
+  gap: 196px;
+  padding: 0;
+}
+@media (min-width: 1024px) {
+  .strategic__container {
+    margin-left: 54px;
+  }
+}
+@media (min-width: 1600px) {
+  .strategic__container {
+    margin-left: 224px;
+  }
+}
+@media (min-width: 2560px) {
+  .strategic__container {
+    margin-left: 707px;
+  }
+}
+.strategic__container {
   position: relative;
 }
 .strategic__content {
-  max-width: 490px;
-  padding-right: 196px;
+  width: 490px;
+  margin-left: 0;
 }
 .strategic__title {
   margin-top: 120px;
@@ -453,26 +490,27 @@ h1 {
   max-width: 362px;
 }
 .strategic__image {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
 }
 .strategic__image__scroll {
   height: 680px;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   .strategic__image__scroll {
     width: 502px;
   }
 }
-@media (min-width: 2560px) {
-  .strategic__image__scroll {
-    width: 1167px;
-  }
-}
 @media (min-width: 1600px) {
   .strategic__image__scroll {
     width: 687px;
+  }
+}
+@media (min-width: 2560px) {
+  .strategic__image__scroll {
+    width: 1167px;
   }
 }
 
