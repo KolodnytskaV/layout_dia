@@ -1,19 +1,33 @@
-@import '../variables';
+@use '../variables' as *;
+@use '../utils/mixins' as *;
 
 .strategic {
-  margin-top: 120px;
   position: relative;
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 0;
 
     position: relative;
+
+    @include on-design {
+      margin-left: 227px;
+    }
+
+    @include on-desktop {
+      margin-left: 54px;
+    }
+
+    @include on-large {
+      margin-left: 707px;
+    }
   }
 
   &__content {
     max-width: 490px;
+    padding-right: 196px;
   }
 
   &__title {
@@ -41,22 +55,8 @@
     top: 0;
     right: 0;
 
-    transform: translateX(20%);
-
-    @include on-desktop {
-      transform: translateX(0);
-    }
-
-    @include on-design {
-      transform: translateX(20%);
-    }
-
-    @include on-large {
-      transform: translateX(35%);
-    }
-
-    img {
-      width: 700px;
+    &__scroll {
+      height: 680px;
 
       @include on-desktop {
         width: 502px;
@@ -64,6 +64,10 @@
 
       @include on-large {
         width: 1167px;
+      }
+
+      @include on-design {
+        width: 687px;
       }
     }
   }

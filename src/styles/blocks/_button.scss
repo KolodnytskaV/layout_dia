@@ -1,9 +1,12 @@
+@use '../variables' as *;
+
 .button {
+  display: flex;
   height: 50px;
   width: 264px;
   border-radius: 8px;
-  background-color: #2060F6;
-  color: #ffffff;
+  background-color: $btn_color;
+  color: $white;
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;

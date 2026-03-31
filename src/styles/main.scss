@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 @use 'variables';
 @use './utils/extends';
 @use './utils/mixins' as *;
 @use './utils/vars';
 @use 'fonts';
 @use 'typography';
-
 @use './blocks/about';
 @use './blocks/button';
 @use './blocks/expertise';
@@ -18,25 +16,7 @@
 @use './blocks/strategic';
 @use './blocks/testimonials';
 @use './blocks/vision';
-=======
-@import 'variables';
-@import 'utils';
-@import 'mixins';
-@import 'fonts';
-@import 'typography';
-@import './styles/blocks/header';
-@import './styles/blocks/nav';
-@import './styles/blocks/button';
-@import './styles/blocks/intro';
-@import './styles/blocks/strategic';
-@import './styles/blocks/about';
-@import './styles/blocks/services';
-@import './styles/blocks/testimonials';
-@import './styles/blocks/vision';
-@import './styles/blocks/footer';
-@import './styles/blocks/expertise';
-@import './styles/blocks/other';
->>>>>>> 527b0c9c4bbd1d714c0d0409d0c183c65a9d3e26
+
 
 
 
