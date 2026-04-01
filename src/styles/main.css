@@ -32,7 +32,7 @@ h1 {
   text-align: center;
 }
 .about__text {
-  color: #6C788B;
+  color: #6c788b;
   font-weight: 600;
   font-size: 24px;
   text-align: center;
@@ -58,7 +58,7 @@ h1 {
 
 .expertise {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 30px;
   padding: 128px 0;
 }
@@ -83,7 +83,7 @@ h1 {
   margin-bottom: 16px;
 }
 .expertise__text {
-  color: #6C788B;
+  color: #6c788b;
   font-weight: 400;
   font-size: 14px;
 }
@@ -98,10 +98,10 @@ h1 {
 
 .footer {
   margin-top: -102px;
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  color: #ffffff;
+  color: #fff;
 }
 .footer__container {
   display: grid;
@@ -126,9 +126,9 @@ h1 {
 .footer__form input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fff;
   padding: 17px 0;
-  color: #ffffff;
+  color: #fff;
   font-size: 15px;
   outline: none;
 }
@@ -139,7 +139,7 @@ h1 {
   color: #c0cdd7;
 }
 .footer__form input:focus {
-  border-bottom: 2px solid #2060F6;
+  border-bottom: 2px solid #2060f6;
 }
 .footer .button {
   margin-top: 80px;
@@ -174,7 +174,7 @@ h1 {
   align-items: center;
 }
 .footer__bottom a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-size: 13px;
   font-weight: 700;
@@ -194,7 +194,7 @@ h1 {
 }
 
 .header {
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
   background-size: cover;
   background-position: center;
   min-height: 800px;
@@ -212,17 +212,6 @@ h1 {
   width: 46px;
   height: 28px;
   margin-top: 48px;
-  /*@include on-desktop {
-    margin-left: 54px;
-  }
-
-  @include on-design {
-    margin-left: 224px;
-  }
-
-  @include on-large {
-    margin-left: 707px;
-  }*/
 }
 
 .intro {
@@ -265,6 +254,9 @@ h1 {
 .nav {
   margin-top: 52px;
 }
+.nav__bottom {
+  margin-top: 0;
+}
 .nav__list {
   display: flex;
   gap: 48px;
@@ -290,11 +282,10 @@ h1 {
   width: 100%;
   height: 2px;
   bottom: -8px;
-  background-color: #2060F6;
+  background-color: #2060f6;
 }
 .nav__link {
-  text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
@@ -405,7 +396,7 @@ h1 {
   height: 100%;
 }
 .service-card p {
-  color: #6C788B;
+  color: #6c788b;
   line-height: 150%;
   letter-spacing: 0;
   margin-bottom: 32px;
@@ -414,7 +405,7 @@ h1 {
 }
 .service-card__number {
   display: flex;
-  color: #2060F6;
+  color: #2060f6;
   font-size: 13px;
   justify-content: center;
   align-items: center;
@@ -538,7 +529,7 @@ h1 {
 .testimonials__describe {
   font-size: 13px;
   font-weight: 600;
-  color: #6C788B;
+  color: #6c788b;
   justify-content: center;
   text-align: center;
 }
@@ -557,7 +548,7 @@ h1 {
   justify-content: center;
   font-weight: 700;
   letter-spacing: 3px;
-  color: #C0CDD7;
+  color: #c0cdd7;
 }
 .testimonials__lapki {
   display: block;
@@ -565,7 +556,7 @@ h1 {
 }
 
 .vision {
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: url("../images/Shapes.png");
   background-repeat: no-repeat;
   background-position: top 72px center;
@@ -591,7 +582,7 @@ h1 {
   font-weight: 600;
   font-size: 24px;
   text-align: center;
-  color: #6C788B;
+  color: #6c788b;
   margin-top: 24px;
   margin-bottom: 64px;
 }
@@ -612,12 +603,16 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4 {
-  font-family: "Poppins", sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: Poppins, sans-serif;
   margin: 0;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 

@@ -17,9 +17,6 @@
 @use './blocks/testimonials';
 @use './blocks/vision';
 
-
-
-
 body {
   background-color: #f4f6f9;
   margin: 0;
@@ -28,12 +25,16 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: Poppins, sans-serif;
   margin: 0;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 

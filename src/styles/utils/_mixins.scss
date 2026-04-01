@@ -1,4 +1,4 @@
-@use '../variables'as *;
+@use '../variables' as *;
 
 @mixin hover($_property, $_toValue) {
   transition: #{$_property} 0.3s;
@@ -7,7 +7,7 @@
   }
 }
 
-@mixin on-large{
+@mixin on-large {
   @media (min-width: $large-width) {
     @content;
   }
