@@ -18,7 +18,7 @@
 @use './blocks/vision';
 
 body {
-  background-color: #f4f6f9;
+  background-color: #f3f6f9;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -36,6 +36,7 @@ h4 {
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 img {

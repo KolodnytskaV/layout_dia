@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .expertise {
   width: 100%;
   background-color: #fff;
@@ -15,6 +17,10 @@
     display: flex;
     justify-content: center;
     gap: 177px;
+
+    @include on-desktop {
+      gap: 137px;
+    }
   }
 
   &__card-title {
@@ -38,7 +44,37 @@
   width: 264px;
   text-align: center;
 
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  @include on-desktop {
+    width: 214px;
+  }
+
+  @include on-tablet {
+    width: 362px;
+  }
+
   img {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .expertise__card {
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+}
+
+@media (max-width: 320px) {
+  .expertise-card {
+    width: 280px;
+    height: 305px;
   }
 }

@@ -3,6 +3,10 @@
 .nav {
   margin-top: 52px;
 
+  @media (max-width: 640px) {
+    display: none;
+  }
+
   &__bottom {
     margin-top: 0;
   }
@@ -17,17 +21,9 @@
 
   &__item {
     position: relative;
-
-    &:last-child {
-      margin-left: 229px;
-
-      @include on-desktop {
-        margin-left: 114px;
-      }
-    }
   }
 
-  &__item:last-child .nav__link::after {
+  /*&__link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -35,7 +31,7 @@
     height: 2px;
     bottom: -8px;
     background-color: #2060f6;
-  }
+  }*/
 
   &__link {
     color: #fff;

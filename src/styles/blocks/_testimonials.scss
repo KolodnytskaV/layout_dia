@@ -1,6 +1,18 @@
+@use '../utils/mixins' as *;
+
 .testimonials {
   &__info {
     padding-top: 148px;
+  }
+
+  &__title__section {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    vertical-align: middle;
+    color: #253757;
+    width: 264px;
+    height: 126px;
   }
 
   &__cards {
@@ -8,13 +20,40 @@
     padding-bottom: 148px;
     display: flex;
     gap: 30px;
+
+    @include on-phone {
+      padding-top: 48px;
+      padding-bottom: 120px;
+    }
   }
 
   &__card {
-    width: 362px;
-    height: 494px;
+    width: 280px;
+    height: 456px;
     border-radius: 16px;
-    background-color: #ffffff;
+    background-color: #fff;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    @include on-tablet {
+      width: 558px;
+      height: 478px;
+    }
+
+    @include on-desktop {
+      width: 292px;
+      height: 456px;
+    }
+
+    @include on-design {
+      width: 362px;
+      height: 494px;
+    }
   }
 
   &__photo {
@@ -22,6 +61,26 @@
     align-items: center;
     justify-content: center;
     margin: 32px auto 24px;
+
+    @include on-phone {
+      width: 166px;
+      height: 166px;
+    }
+
+    @include on-tablet {
+      height: 250px;
+      width: 250px;
+    }
+
+    @include on-desktop {
+      width: 196px;
+      height: 196px;
+    }
+
+    @include on-design {
+      width: 250px;
+      height: 250px;
+    }
   }
 
   &__describe {
@@ -30,6 +89,7 @@
     color: #6c788b;
     justify-content: center;
     text-align: center;
+    margin-top: 8px;
   }
 
   &__name {
@@ -49,10 +109,25 @@
     font-weight: 700;
     letter-spacing: 3px;
     color: #c0cdd7;
+    margin-bottom: 32px;
   }
 
   &__lapki {
     display: block;
     margin: 0 auto;
   }
+}
+
+@media (max-width: 640px) {
+  .testimonials__cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .testimonials__title__section {
+    width: 280px;
+    height: 48px;
+  }
+
 }

@@ -45,3 +45,23 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 640px) {
+  .vision {
+    background-size: 1055px auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .vision {
+    background-image: none;
+  }
+  .vision__container {
+    padding: 0;
+  }
+
+  .vision__info {
+    width: 320px;
+    height: 571px;
+  }
+}

@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .about {
   margin-top: 148px;
   margin-bottom: 148px;
@@ -15,5 +17,49 @@
     font-size: 24px;
     text-align: center;
     line-height: 150%;
+    height: 144px;
+    width: 754px;
+    margin: auto;
+    margin-top: 16px;
+
+    @include on-desktop {
+      width: 716px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: 0;
+  }
+
+  .about__container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 558px;
+    height: 224px;
+  }
+
+  .about__text {
+    width: 558px;
+    height: 224px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .about__container {
+    width: 280px;
+    height: 402px;
+  }
+
+  .about__text {
+    width: 280px;
+    height: 330px;
+    font-size: 22px;
   }
 }

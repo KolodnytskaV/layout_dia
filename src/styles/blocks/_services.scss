@@ -3,9 +3,24 @@
 .services {
   padding: 100px 0;
 
+  &__title__section {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    vertical-align: middle;
+    color: #253757;
+    width: 264px;
+    height: 126px;
+  }
+
   &__info {
     width: 40%;
     padding-top: 103px;
+    padding-left: 0;
+
+    @include on-desktop {
+      padding-left: 54px;
+    }
 
     & p {
       font-weight: 400;
@@ -14,6 +29,21 @@
       color: #6c788b;
       width: 364px;
       height: 249px;
+
+      @include on-tablet {
+        width: 264px;
+        height: 312px;
+      }
+
+      @include on-desktop {
+        width: 294px;
+        height: 249px;
+      }
+
+      @include on-design {
+        width: 364px;
+        height: 249px;
+      }
     }
   }
 
@@ -22,6 +52,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+
+    @media(min-width: 1024px) {
+      gap: 20px;
+    }
+
+    @media(max-width: 640px) {
+      padding-left: 41px;
+      gap: 30px;
+    }
   }
 }
 
@@ -36,12 +75,22 @@
 
 .service-card {
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 32px;
   border-radius: 16px;
-  box-shadow: 0px 9px 18px 0px #25293108;
-
+  box-shadow: 0 9px 18px 0 #25293108;
   height: 264px;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  @include on-tablet {
+    width: 264px;
+  }
 
   @include on-desktop {
     width: 214px;
@@ -97,5 +146,68 @@
 
   &:nth-child(4) {
     transform: translateY(30px);
+  }
+}
+
+@media (max-width: 640px) {
+  .services {
+    padding-top: 0;
+  }
+
+  .services__cards {
+    margin-top: -150px;
+  }
+
+  .services__info {
+    padding-top: 0;
+    padding-left: 39px;
+    height: auto;
+  }
+
+  .services__info p {
+    width: 100%;
+    height: auto;
+  }
+
+  .services-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .services {
+    padding-left: 18px;
+    padding-bottom: 0;
+
+    & p {
+      width: 282px;
+    }
+  }
+
+  .services__info {
+    padding: 0;
+  }
+
+  .services__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .service-card {
+    width: 280px;
+    height: 264px;
+    padding-bottom: 24px;
+    transform: none;
+  }
+
+  .service-card:nth-child(1),
+  .service-card:nth-child(2),
+  .service-card:nth-child(3),
+  .service-card:nth-child(4) {
+    transform: none;
   }
 }

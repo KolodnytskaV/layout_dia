@@ -21,19 +21,24 @@
     />
   </head>
   <body>
-    <script src="scripts/main.js"></script>
-    <header class="header">
+    <header id="home" class="header">
       <div class="container header__container">
-        <a
-          href="#hero"
-          class="header__logo"
-        >
-          <img
-            src="./images/Logo.svg"
-            alt="logo"
-            class="logo"
-          />
-        </a>
+        <div class="header__left">
+          <a
+            href="#hero"
+            class="header__logo"
+          >
+            <img
+              src="./images/Logo.svg"
+              alt="logo"
+              class="logo"
+            />
+          </a>
+          <div class="burger-menu">
+            <img src="./images/Menu.svg" alt="menu"
+            class="burger-icon" />
+          </div>
+        </div>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -68,25 +73,19 @@
                 Contact us
               </a>
             </li>
-            <li class="nav__item">
-              <a
-                class="nav__link"
-                href="#hireus"
-              >
-                Hire us
-              </a>
-            </li>
           </ul>
         </nav>
+
+        <a class="header__hire" href="#hireus">
+            Hire us
+        </a>
       </div>
 
       <section class="strategic">
         <div class="container strategic__container">
           <div class="strategic__content">
             <h1 class="strategic__title">
-              Strategic
-              <br />
-              Agency
+              Strategic Agency
             </h1>
             <p class="strategic__text">
               We believe in the power of bold ideas that can solve buisiness
@@ -99,50 +98,51 @@
               Learn more
             </a>
           </div>
-          <div class="strategic__image">
-            <img
-              class="strategic__image__scroll"
+        </div>
+        <div class="strategic__image">
+          <img
+            class="strategic__image__scroll"
               src="./images/Photo.png"
               alt="Smart watch"
             />
 
-            <div class="intro">
-              <div class="intro__arrow">
+          <div class="intro">
+            <div class="intro__arrow">
+              <button class="button-prev">
                 <img
                   src="./images/Arrow left.png"
-                  alt="arrow"
-                  class="intro__image"
+                    alt="arrow"
+                    class="intro__image"
                 />
+              </button>
+              <button class="button-next">
                 <img
                   src="./images/Arrow right.png"
-                  alt="arrow"
-                  class="intro__image"
+                    alt="arrow"
+                    class="intro__image"
                 />
-              </div>
-              <div class="intro__content">
-                <h2 class="intro__title">Intro</h2>
-                <p class="intro__text">
+              </button>
+            </div>
+            <div class="intro__content">
+              <h2 class="intro__title">Intro</h2>
+              <p class="intro__text">
                   By the same illusion which lifts the
-                  <br />
+                <br />
                   horizon.
-                </p>
-              </div>
+              </p>
             </div>
           </div>
         </div>
       </section>
     </header>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="container about__container">
         <h2 class="about__title">Who we are</h2>
         <p class="about__text">
           We embrace a strategic approach to creative ideas. We are
-          <br />
           interested in people and human relationships. This is the main
-          <br />
           thing you need to know about us. We believe in the power of
-          <br />
           bold ideas that can solve business challenges.
         </p>
       </div>
@@ -192,11 +192,11 @@
       </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
       <div class="container services-wrapper">
         <div class="services__info">
           <h3 class="little_name">Services</h3>
-          <h2 class="title_section">Air is a full service creative agency</h2>
+          <h2 class="services__title__section">Air is a full service creative agency</h2>
           <p>
             Deep analytics, strong strategy and bright creative ideas.
             <br />
@@ -310,13 +310,11 @@
       </div>
     </section>
 
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
       <div class="container testimonials__info">
         <h3 class="little_name">Testimonials</h3>
-        <h2 class="title_section">
-          What
-          <br />
-          people say
+        <h2 class="testimonials__title__section">
+          What people say
         </h2>
 
         <div class="testimonials__cards">
@@ -387,12 +385,11 @@
     </section>
 
     <section class="vision">
-      <div class="container">
+      <div class="container vision__container">
         <div class="vision__info">
           <h2 class="vision__title">Vision, Passion, Results</h2>
           <p class="vision__text">
             We are sure that first-rate job is possible only if all three
-            <br />
             components are united.
           </p>
           <a
@@ -405,11 +402,11 @@
       </div>
     </section>
 
-    <section class="footer">
+    <section id="contactus" class="footer">
       <div class="container footer__container">
         <div class="footer__form">
           <h2>Send us a message</h2>
-          <form>
+          <form onsubmit="this.reset(); return false;">
             <input
               type="email"
               placeholder="Email"
@@ -422,13 +419,8 @@
               type="text"
               placeholder="Your message"
             />
+            <button type="submit" class="button">Send</button>
           </form>
-          <a
-            href="#"
-            class="button"
-          >
-            Send
-          </a>
         </div>
 
         <div class="footer__contacts">
@@ -440,15 +432,15 @@
           <h3>Our socials</h3>
           <div class="socials__media">
             <img
-              src="./images/facebook 1.png"
+              src="./images/facebook 1.svg"
               alt="app"
             />
             <img
-              src="./images/Layer 2.png"
+              src="./images/Layer 2.svg"
               alt="app"
             />
             <img
-              src="./images/Vector.png"
+              src="./images/instagram.svg"
               alt="app"
             />
           </div>
@@ -462,7 +454,7 @@
               class="logo"
             />
           </a>
-          <nav class="nav_bottom">
+          <nav class="nav__bottom">
             <ul class="nav__list">
               <li><a href="#about">About us</a></li>
               <li><a href="#home">Home</a></li>
@@ -474,5 +466,6 @@
         </div>
       </div>
     </section>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
