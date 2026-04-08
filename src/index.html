@@ -100,28 +100,47 @@
           </div>
         </div>
         <div class="strategic__image">
-          <img
-            class="strategic__image__scroll"
-              src="./images/Photo.png"
-              alt="Smart watch"
-            />
+          <input type="radio" name="slider"
+          id="s1" checked>
+          <input type="radio" name="slider"
+          id="s2">
+          <input type="radio" name="slider"
+          id="s3">
+          <input type="radio" name="slider"
+          id="s4">
+
+          <div class="slides">
+            <div class="slide strategic__image__scroll">
+              <img src="./images/Photo.png" alt="1">
+            </div>
+            <div class="slide strategic__image__scroll">
+              <img src="./images/Photo2.png" alt="2">
+            </div>
+            <div class="slide strategic__image__scroll">
+              <img src="./images/Photo3.png" alt="3">
+            </div>
+            <div class="slide strategic__image__scroll">
+              <img src="./images/Photo4.png" alt="3">
+            </div>
+          </div>
+
 
           <div class="intro">
             <div class="intro__arrow">
-              <button class="button-prev">
+              <label for="s2" class="button-prev">
                 <img
                   src="./images/Arrow left.png"
                     alt="arrow"
                     class="intro__image"
                 />
-              </button>
-              <button class="button-next">
+              </label>
+              <label for="s3" class="button-next">
                 <img
                   src="./images/Arrow right.png"
                     alt="arrow"
                     class="intro__image"
                 />
-              </button>
+              </label>
             </div>
             <div class="intro__content">
               <h2 class="intro__title">Intro</h2>

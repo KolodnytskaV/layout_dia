@@ -8,6 +8,8 @@
   align-items: center;
   gap: 24px;
 
+  z-index: 2;
+
   &__arrow {
     display: flex;
     gap: 16px;
