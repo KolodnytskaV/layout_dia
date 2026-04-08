@@ -90,11 +90,27 @@
   }
 }
 
+.slider {
+  overflow: hidden;
+}
+
 .slides {
   display: flex;
   width: 400%;
   height: 100%;
   transition: transform 0.3s ease;
+
+  @include on-desktop {
+    width: 502px;
+  }
+
+  @include on-design {
+    width: 687px;
+  }
+
+  @include on-large {
+    width: 1167px;
+  }
 }
 
 .slide {
