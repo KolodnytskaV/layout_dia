@@ -3,22 +3,21 @@
 
 .strategic {
   position: relative;
-
   min-height: calc(100% - 76px);
 
   &__container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-right: 0;
     margin-bottom: 0;
-    //gap: 196px;
+    margin-top: 48px;
 
     padding-left: 0;
     padding-right: 0;
     position: relative;
     max-width: 1200px;
-    //margin: 0 auto;
 
 
     @include on-desktop {
@@ -38,8 +37,6 @@
       position: absolute;
       z-index: 10;
     }
-
-    position: relative;
   }
 
   &__content {
@@ -93,10 +90,6 @@
       width: 100%;
       height: 100%;
 
-      /*@include on-large {
-        width: 1167px;
-      }*/
-
       & img {
         width: 100%;
         height: 100%;
@@ -133,4 +126,12 @@
   .header {
     height: auto;
   }
+}
+
+.container .strategic__container {
+  align-items: flex-start;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
 }
