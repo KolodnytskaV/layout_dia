@@ -189,6 +189,10 @@ select:-webkit-autofill {
 
   .footer__contacts {
     margin-top: 72px;
+
+    & p {
+      width: 200px;
+    }
   }
 
   .footer__contacts h2 {
@@ -207,5 +211,9 @@ select:-webkit-autofill {
     align-items: flex-start;
     gap: 16px;
     padding-top: 67px;
+  }
+
+  .contacts__links__adresse {
+    word-break: break-word;
   }
 }

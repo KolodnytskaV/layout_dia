@@ -17,3 +17,28 @@
     opacity: 0.85;
   }
 }
+
+.send__button {
+  border-width: 0;
+}
+
+.button-prev, .button-next {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+
+  background: none;
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
