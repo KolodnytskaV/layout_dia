@@ -19,7 +19,8 @@
 
   &__form {
     padding-top: 180px;
-    width: 460px;
+    width: 100%;
+    max-width: 460px;
 
     @include on-desktop {
       width: 370px;
@@ -137,7 +138,8 @@ select:-webkit-autofill {
 
   .footer__form {
     width: 362px;
-    padding-right: 196px;
+    //padding-right: 196px;
+    padding: auto;
   }
 
   .footer__contacts {

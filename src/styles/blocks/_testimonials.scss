@@ -17,6 +17,7 @@
 
   &__cards {
     justify-content: center;
+    align-items: center;
     padding-top: 85px;
     padding-bottom: 148px;
     display: flex;
@@ -24,8 +25,9 @@
     margin: 0 auto;
 
     @include on-phone {
-      padding-top: 48px;
-      padding-bottom: 120px;
+      /*padding-top: 48px;
+      padding-bottom: 120px;*/
+      padding: 48px auto 120px;
     }
   }
 

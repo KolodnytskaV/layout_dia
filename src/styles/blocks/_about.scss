@@ -4,6 +4,13 @@
   margin-top: 148px;
   margin-bottom: 148px;
 
+
+  &__container {
+    max-width: 558px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
   &__title {
     color: #253757;
     font-size: 32px;
@@ -17,13 +24,13 @@
     font-size: 24px;
     text-align: center;
     line-height: 150%;
-    height: 144px;
-    width: 754px;
+    width: 100%;
+    max-width: 754px;
     margin: auto;
     margin-top: 16px;
 
     @include on-desktop {
-      width: 716px;
+      max-width: 716px;
     }
   }
 }
@@ -34,15 +41,13 @@
   }
 
   .about__container {
-    padding-left: 0;
-    padding-right: 0;
-    width: 558px;
-    height: 224px;
+    width: 100%;
+    max-width: 558px;
   }
 
   .about__text {
-    width: 558px;
-    height: 224px;
+    width: 100%;
+    max-width: 558px;
   }
 }
 
@@ -52,14 +57,16 @@
     margin-bottom: 120px;
   }
 
-  .about__container {
-    width: 280px;
-    height: 402px;
+  .about__title {
+    width: 100%;
+    max-width: 280px;
   }
 
   .about__text {
-    width: 280px;
-    height: 330px;
+    width: 100%;
+    max-width: 280px;
     font-size: 22px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
